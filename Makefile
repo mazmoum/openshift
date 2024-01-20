@@ -1,6 +1,6 @@
 .PHONY: build
 
-image = wicksy/openshift-demo-app
+image = mazmoum/openshift
 
 build:
 	docker build --no-cache=true -t ${image}:latest .
