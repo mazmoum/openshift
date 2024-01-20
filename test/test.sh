@@ -34,14 +34,14 @@ trap 'error $LINENO' ERR
 cleanup
 
 echo "===> Starting daemon images..."
-docker run -d -p 8080:8080 wicksy/openshift-demo-app:latest
+docker run -d -p 8080:8080 mazmoum/openshift:latest
 echo "===> Waiting for init..."
 sleep 10
 
 echo "===> Testing openshift-demo-app..."
 echo "===> HTTP..."
 curl --progress-bar "http://${testhost}:8080" \
-  | grep 'Welcome to an OpenShift v3 Demo App'
+  | grep 'Welcome to an OpenShift v4 Demo App'
 
 echo "===> Image testing complete..."
 cleanup
