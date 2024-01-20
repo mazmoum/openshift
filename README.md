@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/wicksy/openshift-demo-app.svg?branch=master)](https://travis-ci.org/wicksy/openshift-demo-app) [![license](https://img.shields.io/badge/License-MIT-blue.svg?maxAge=2592000)](https://github.com/wicksy/openshift-demo-app/blob/master/LICENSE.md)</br>
+[![Build Status](https://travis-ci.org/wicksy/openshift-demo-app.svg?branch=master)](https://travis-ci.org/mazmoum/openshift) [![license](https://img.shields.io/badge/License-MIT-blue.svg?maxAge=2592000)](https://github.com/mazmoum/openshift/blob/master/LICENSE.md)</br>
 
 ## Demo App for OpenShift
 
@@ -15,17 +15,17 @@ You can add applications to this project with the 'new-app' command. For example
     oc new-app centos/ruby-22-centos7~https://github.com/openshift/ruby-ex.git
 
 to build a new example application in Ruby.
-[vagrant@ocptest ~]$ oc new-app --name=demo https://github.com/wicksy/openshift-demo-app
---> Found Docker image d9ad582 (7 months old) from Docker Hub for "wicksy/alpine"
+[vagrant@ocptest ~]$ oc new-app --name=demo https://github.com/mazmom/openshift-demo-app
+--> Found Docker image d9ad582 (7 months old) from Docker Hub for "mazmoum/alpine"
 
     * An image stream will be created as "alpine:latest" that will track the source image
-    * A Docker build using source code from https://github.com/wicksy/openshift-demo-app will be created
+    * A Docker build using source code from https://github.com/mazmoum/openshift will be created
       * The resulting image will be pushed to image stream "demo:latest"
       * Every time "alpine:latest" changes a new build will be triggered
     * This image will be deployed in deployment config "demo"
     * Port 8080 will be load balanced by service "demo"
       * Other containers can access this service through the hostname "demo"
-    * WARNING: Image "wicksy/alpine" runs as the 'root' user which may not be permitted by your cluster administrator
+    * WARNING: Image "mazmoum/alpine" runs as the 'root' user which may not be permitted by your cluster administrator
 
 --> Creating resources ...
     imagestream "alpine" created
